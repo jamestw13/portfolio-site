@@ -24,6 +24,13 @@ p {
 a {
   text-decoration: none;
   color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 
 section {
@@ -103,6 +110,7 @@ header nav ul li a:hover {
   right: 7%;
   top: 75%;
   padding: 10px 20px;
+  border-radius: 7px;
 }
 
 /* END HERO */
@@ -126,7 +134,7 @@ header nav ul li a:hover {
 
 .works {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 .work-tile {
@@ -138,12 +146,18 @@ header nav ul li a:hover {
   overflow: hidden;
 }
 
+.work-tile a {
+  padding: 0 0;
+}
+
 .work-tile:hover {
   border: 10px solid var(--secondary-color);
 }
 
 .works img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .works img:hover {
@@ -155,6 +169,8 @@ header nav ul li a:hover {
   position: absolute;
   padding: 10px 35px;
   bottom: 20px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .work-tag h3 {
@@ -178,6 +194,7 @@ header nav ul li a:hover {
 
 .c-link {
   margin: 20px;
+  font-size: larger;
 }
 
 .contact-links a {
