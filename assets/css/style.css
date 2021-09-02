@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #a5f35c;
-  --secondary-color: #2f3a59;
-  --tertiary-color: #455473;
+  --primary-color: #68f9fa;
+  --secondary-color: #455f5f;
+  --tertiary-color: #54c7c7;
 }
 
 * {
@@ -11,18 +11,19 @@
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: whitesmoke;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: var(--secondary-color);
 }
 
-a {
-  text-decoration: none;
-}
-
 p {
   font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 section {
@@ -31,12 +32,15 @@ section {
 }
 
 .section-title {
-  color: var(--tertiary-color);
-  border-right: 2px solid var(--tertiary-color);
-  min-width: 10%;
+  color: var(--secondary-color);
+  border-right: 4px solid var(--secondary-color);
+  min-width: 15%;
   text-align: right;
-  padding: 10px;
+
+  padding: 20px;
   margin: 20px;
+
+  font-size: xx-large;
 }
 
 /* END GENERIC */
@@ -69,7 +73,8 @@ header nav ul {
 
 header nav ul li a {
   color: var(--primary-color);
-
+  text-decoration: none;
+  font-size: larger;
   margin: 10px 15px;
   border-bottom: 2px solid var(--primary-color);
 }
@@ -81,12 +86,12 @@ header nav ul li a:hover {
 /* END HEADER */
 /* START HERO */
 .hero {
-  background-image: url("../images/hero-image.jpg");
+  background-image: url("../images/tj-photo.jpg");
   background-size: cover;
   background-position: 80%;
   color: var(--secondary-color);
   justify-content: right;
-  height: 200px;
+  height: 650px;
   margin: 0;
   position: relative;
 }
@@ -96,36 +101,47 @@ header nav ul li a:hover {
   margin: 10px 0 10px 200px;
   position: absolute;
   right: 7%;
-  top: 65%;
-  padding: 3px 10px 3px 10px;
+  top: 75%;
+  padding: 10px 20px;
 }
 
 /* END HERO */
+
+.main-box {
+  margin: 0 100px;
+}
 /* START ABOUT-ME */
 
 #about-me {
-  padding: 10px;
+}
+
+#about-me p {
+  padding: 25px;
+  font-size: x-large;
 }
 /* END ABOUT-ME */
 /* START WORK */
 #work-section {
-  padding: 10px;
 }
 
 .works {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 }
 
 .work-tile {
   flex: 1 40%;
-  border: 10px solid var(--tertiary-color);
+  margin: 5px;
+  border: 10px solid var(--primary-color);
   position: relative;
+  height: 20vw;
+  overflow: hidden;
 }
 
-.works:last-child {
-  flex: 1 100%;
+.work-tile:hover {
+  border: 10px solid var(--secondary-color);
 }
+
 .works img {
   width: 100%;
 }
@@ -137,16 +153,55 @@ header nav ul li a:hover {
 .work-tag {
   background-color: var(--primary-color);
   position: absolute;
+  padding: 10px 35px;
   bottom: 20px;
 }
 
+.work-tag h3 {
+  font-size: x-large;
+}
+
+.work-tag h4 {
+  font-size: larger;
+}
 /* END WORK */
 /* START CONTACT-ME */
 #contact-me {
-  padding: 10px;
+  display: flex;
 }
+
 .contact-links {
   display: flex;
-  color: var(--tertiary-color);
-  border-bottom: 2px solid var(--tertiary-color);
+  justify-content: space-around;
+  align-items: center;
 }
+
+.c-link {
+  margin: 20px;
+}
+
+.contact-links a {
+  border-bottom: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  margin: 10px;
+  text-decoration: none;
+}
+
+/* END CONTACT SECTION */
+/* START FOOTER SECTION */
+footer {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: right;
+}
+
+footer h3 {
+  color: var(--primary-color);
+  font-size: smaller;
+}
+
+footer p {
+  color: var(--primary-color);
+  font-size: x-small;
+}
+/* END FOOTER SECTION */
