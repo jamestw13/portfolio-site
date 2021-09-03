@@ -28,11 +28,6 @@ a {
   border-radius: 5px;
 }
 
-a:hover {
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-}
-
 section {
   display: flex;
   flex-wrap: nowrap;
@@ -87,7 +82,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  /* todo */
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 
 /* END HEADER */
@@ -129,8 +125,6 @@ header nav ul li a:hover {
 }
 /* END ABOUT-ME */
 /* START WORK */
-#work-section {
-}
 
 .works {
   display: flex;
@@ -150,18 +144,10 @@ header nav ul li a:hover {
   padding: 0 0;
 }
 
-.work-tile:hover {
-  border: 10px solid var(--secondary-color);
-}
-
 .works img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.works img:hover {
-  opacity: 0.75;
 }
 
 .work-tag {
@@ -180,6 +166,17 @@ header nav ul li a:hover {
 .work-tag h4 {
   font-size: larger;
 }
+
+/* WORK SECTION HOVER STYLE */
+
+.work-tile:hover {
+  border: 10px solid var(--secondary-color);
+}
+
+.works img:hover {
+  opacity: 0.75;
+}
+
 /* END WORK */
 /* START CONTACT-ME */
 #contact-me {
@@ -204,6 +201,11 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+.contact-links a:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
 /* END CONTACT SECTION */
 /* START FOOTER SECTION */
 footer {
@@ -222,3 +224,14 @@ footer p {
   font-size: x-small;
 }
 /* END FOOTER SECTION */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+}
