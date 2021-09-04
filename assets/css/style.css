@@ -108,7 +108,7 @@ header nav ul li a:hover {
   background-position: center;
   color: var(--secondary-color);
   justify-content: right;
-  height: 800px;
+  height: 55vw;
   margin: 0;
   position: relative;
 }
@@ -117,8 +117,9 @@ header nav ul li a:hover {
   background-color: var(--primary-color);
   margin: 10px 0 10px 200px;
   position: absolute;
-  right: 7%;
-  top: 75%;
+  font-size: 2vw;
+  right: 2vw;
+  bottom: 2vw;
   padding: 10px 20px;
   border-radius: 7px;
 }
