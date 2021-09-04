@@ -15,4 +15,4 @@ The purpose of this project was to create a static website to display a mock por
 
 ## [Click here to go to the live deployment](https://jamestw13.github.io/)
 
-!![Screenshot](https://github.com/jamestw13/jamestw13.github.io/blob/main/Portfolio%20mockup.gif)
+!![Screenshot](https://github.com/jamestw13/jamestw13.github.io/blob/main/portfolio-screenshot.png)
