@@ -13,6 +13,12 @@ The purpose of this project was to create a static website to display a mock por
 - [x] Clicking the images of the applications takes the user to that deployed application
 - [x] The page is responsive to resizing various screens and devices
 
+### Note - since this is only a mock portfolio:
+
+- The resume link does not yet function
+- In the contact links, the phone number is fake (it perhaps calls Jenny)
+- The twitter link leads to the twitter main page
+
 ## [Click here to go to the live deployment](https://jamestw13.github.io/)
 
 ![Screenshot](https://github.com/jamestw13/jamestw13.github.io/blob/main/portfolio-screenshot.png)
