@@ -25,7 +25,7 @@ a {
   text-decoration: none;
   color: var(--secondary-color);
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 section {
@@ -36,13 +36,15 @@ section {
 .section-title {
   color: var(--secondary-color);
   border-right: 4px solid var(--secondary-color);
-  min-width: 15%;
+  min-width: 250px;
+  max-width: 250px;
   text-align: right;
+  white-space: nowrap;
 
   padding: 20px;
   margin: 20px;
 
-  font-size: xx-large;
+  font-size: 28px;
 }
 
 /* END GENERIC */
@@ -53,10 +55,11 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: var(--secondary-color);
-  position: -webkit-sticky;
-  position: sticky;
-  height: 80px;
+  position: fixed;
+  width: 100%;
+  padding: 20px 10px;
   align-items: center;
+  z-index: 9999;
 }
 
 header h1 {
@@ -64,20 +67,31 @@ header h1 {
   color: var(--secondary-color);
   font-weight: bold;
   padding: 3px 10px 3px 150px;
+  border-radius: 7px;
+}
+
+header nav {
+  margin: 7px 0;
 }
 
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
+}
+
+header nav ul li {
+  flex-grow: 0;
+  padding: 10px 15px;
+  margin-bottom: 10px;
 }
 
 header nav ul li a {
   color: var(--primary-color);
   text-decoration: none;
   font-size: larger;
-  margin: 10px 15px;
   border-bottom: 2px solid var(--primary-color);
 }
 
@@ -91,10 +105,10 @@ header nav ul li a:hover {
 .hero {
   background-image: url("../images/tj-photo.jpg");
   background-size: cover;
-  background-position: 80%;
+  background-position: center;
   color: var(--secondary-color);
   justify-content: right;
-  height: 650px;
+  height: 800px;
   margin: 0;
   position: relative;
 }
@@ -112,16 +126,13 @@ header nav ul li a:hover {
 /* END HERO */
 
 .main-box {
-  margin: 0 100px;
+  margin: 0 2%;
 }
 /* START ABOUT-ME */
 
-#about-me {
-}
-
 #about-me p {
   padding: 25px;
-  font-size: x-large;
+  font-size: 2vw;
 }
 /* END ABOUT-ME */
 /* START WORK */
@@ -135,8 +146,9 @@ header nav ul li a:hover {
   flex: 1 40%;
   margin: 5px;
   border: 10px solid var(--primary-color);
+  border-radius: 7px;
   position: relative;
-  height: 20vw;
+  height: 25vw;
   overflow: hidden;
 }
 
@@ -153,18 +165,18 @@ header nav ul li a:hover {
 .work-tag {
   background-color: var(--primary-color);
   position: absolute;
-  padding: 10px 35px;
-  bottom: 20px;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
+  padding: 1vw 2.25vw;
+  left: 5px;
+  bottom: 2vw;
+  border-radius: 7px;
 }
 
 .work-tag h3 {
-  font-size: x-large;
+  font-size: 1.5vw;
 }
 
 .work-tag h4 {
-  font-size: larger;
+  font-size: 1.25vw;
 }
 
 /* WORK SECTION HOVER STYLE */
@@ -181,23 +193,26 @@ header nav ul li a:hover {
 /* START CONTACT-ME */
 #contact-me {
   display: flex;
+  justify-content: space-between;
 }
 
 .contact-links {
+  flex: 1 1 15%;
+
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .c-link {
-  margin: 20px;
-  font-size: larger;
 }
 
 .contact-links a {
+  font-size: 1.5vw;
   border-bottom: 2px solid var(--secondary-color);
   color: var(--secondary-color);
-  margin: 10px;
+  margin: 5px;
   text-decoration: none;
 }
 
@@ -226,6 +241,20 @@ footer p {
 /* END FOOTER SECTION */
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    flex-direction: column;
+  }
+  header h1 {
+    padding: 5px 20px;
+    margin: 5px auto 8px auto;
+  }
+
+  .section-title {
+    font-size: x-large;
+    min-width: 200px;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
