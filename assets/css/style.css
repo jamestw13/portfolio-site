@@ -277,16 +277,21 @@ footer p {
     margin: 10px;
   }
 
+  .main-box {
+    margin: 0 0;
+  }
+
   .works {
     flex-direction: column-reverse;
   }
 
   .work-tile {
-    max-height: 300px;
+    max-height: 200px;
+    flex: 1 10%;
   }
 
   .works img {
-    max-height: 400px;
+    max-height: 200px;
   }
 
   .work-tile h3 {
